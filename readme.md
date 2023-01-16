@@ -21,14 +21,14 @@ PS: this command also generated the databse models
 
 ## see sql behind ef core (api)
 1. in startup:
-                var loggerFactory = LoggerFactory.Create(builder =>
-                {
-                    builder
-                        .AddConsole((options) => { })
-                        .AddFilter((category, level) =>
-                            category == DbLoggerCategory.Database.Command.Name&& level == LogLevel.Information);
-                }); 
-builder.UseSqlServer(..)
-.EnableSensitiveDataLogging()                      
-.UseLoggerFactory(loggerFactory); 
+               > var loggerFactory = LoggerFactory.Create(builder =>
+                > {
+                  >  builder
+                   >     .AddConsole((options) => { })
+                    >    .AddFilter((category, level) =>
+                     >       category == DbLoggerCategory.Database.Command.Name&& level == LogLevel.Information);
+                > }); 
+> builder.UseSqlServer(..)
+> .EnableSensitiveDataLogging()                      
+> .UseLoggerFactory(loggerFactory); 
 2. it will be shown in OUTPUT: api
