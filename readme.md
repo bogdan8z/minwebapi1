@@ -14,5 +14,6 @@ This will generate **Database** folder.
 4. in Database folder we have the context file and inside there is OnModelCreating method and from here we can copy from here what we need for the config file
 PS: this command also generated the databse models
 5. links
-> https://learn.microsoft.com/en-us/ef/core/modeling/
+> https://learn.microsoft.com/en-us/ef/core/modeling
+
 > https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx
