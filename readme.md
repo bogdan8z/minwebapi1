@@ -17,3 +17,18 @@ PS: this command also generated the databse models
 > https://learn.microsoft.com/en-us/ef/core/modeling
 
 > https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx
+
+
+## see sql behind ef core (api)
+1. in startup:
+                var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder
+                        .AddConsole((options) => { })
+                        .AddFilter((category, level) =>
+                            category == DbLoggerCategory.Database.Command.Name&& level == LogLevel.Information);
+                }); 
+builder.UseSqlServer(..)
+.EnableSensitiveDataLogging()                      
+.UseLoggerFactory(loggerFactory); 
+2. it will be shown in OUTPUT: api
