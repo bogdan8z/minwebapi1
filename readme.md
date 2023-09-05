@@ -1,4 +1,4 @@
-test2-to
+test2-from
 ## Todo REST API with ASP.NET Core Minimal APIs
 Todo REST API samples using ASP.NET Core minimal APIs
 # also check https://github.com/davidfowl/CommunityStandUpMinimalAPI
